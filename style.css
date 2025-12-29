@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(18, 140, 211);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+nav > input {
+  width: calc(20% - 15px);
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(7, 71, 248);
+  box-shadow: 0px 0px 3px 1px rgb(18, 98, 189);
+  padding-left: 15px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nav-logo{
+  width: 25%;
+  /* background-color: rgb(66, 117, 100); */
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px rgb(167, 184, 204);
+  padding: 5px;
+  border-radius: 15px;
+  
+}
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+nav > .right-nav > a {
+  text-decoration: none;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: aliceblue;
+}
+nav > .right-nav > ul {
+  list-style: none;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+main {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  background-color: rgb(224, 224, 224);
+}
+main > aside {
+  width: 20%;
+  height: 100%;
+  padding: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: rgb(29, 92, 173);
+  display: flex;
+}
+main > aside > ul {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+main > aside > ul > li > a {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(1, 29, 83);
+  margin-top: 15px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s ease;
+}
+main > aside > ul > li > a:hover {
+  transform: translateY(-2px);
+  border-bottom: 2px solid rgb(0, 255, 242);
+}
+main > .content-section {
+  width: auto;
+  height: 100%;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+  overflow: hidden;
+}
+.content-section > .card {
+  width: 250px;
+  min-height: 225px;
+  height: auto;
+  border-radius: 7.5px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgb(0, 150, 12);
+  font-weight: 800;
+  border: 1px solid #000000;
+  transition:transform 0.2s ease ;
+}
+.content-section > .card:hover{
+  transform: translateY(-3px);
+  border-bottom:2px solid #000000;
+}
+
+/* logo */
+.logo {
+  font-size: 15rem;
+  font-weight: bold;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(224, 224, 224);
+ padding: 125px 50px;
+ border-radius: 50%;
+ border: 1px solid rgb(26, 163, 255);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ column-gap: 12px;
+ color: rgb(0, 123, 231);
+/* background: linear-gradient(90deg,rgb(218, 218, 218) 0%, rgb(233, 233, 233) 50%, rgb(255, 255, 255) 100%) */
+}
+.logo>span{
+  color: rgb(163, 161, 161);
+}
+.logo>div{
+  background-color: rgb(133, 133, 133);
+  width: 12px;
+  height: 150px;
+}
+.logo-wraper{
+    font-size: 15rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  background-color: rgb(243, 243, 243);
+ padding: 15px 15px;
+ border-radius: 50%;
+ border: 1px solid rgb(26, 163, 255);
+}
+
+/* animation */
+.logo-wraper {
+    background: linear-gradient(145deg, #4845ff, #ffffff, #4845ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 5s ease-in infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease-in infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
