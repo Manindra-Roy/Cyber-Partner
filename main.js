@@ -26,7 +26,7 @@ function loadStateGovtServices() {
 }
 function loadCentralGovtServices() {
   contentSection.innerHTML = `
-    <a href="https://myaadhaaruidai.com/" target="_blank" class="card" style="background-image: url(/public/images/central-services/my-aadhar.jpeg);">My Aadhar</a>
+    <a href="https://myaadhaaruidaiinfo.com/" target="_blank" class="card" style="background-image: url(/public/images/central-services/my-aadhar.jpeg);">My Aadhar</a>
     <a href="https://voters.eci.gov.in/" target="_blank" class="card" style="background-image: url(/public/images/central-services/voter.jpeg);">Voter</a>
     <a href="https://www.onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank" class="card" style="background-image: url(/public/images/central-services/nsdl.jpeg);">NSDL</a>
     <a href="https://www.onlineservices.proteantech.in/paam/requestAndDownloadEPAN.html" target="_blank" class="card" style="background-image: url(/public/images/central-services/nsdl.jpeg);">E-Pan</a>
